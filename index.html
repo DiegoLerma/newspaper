@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Declaracion de tipo de documento. Indica al programa en que lenguaje o bajo que sintaxis escribiremos el codigo que sigue -->
+<html lang="es">
+ <!--Establece el lenguaje en que se escribira el contenido la pagina web: Espanol = "es". Ingles= "en"-->
+
+    <head>
+    <!-- Se abre la etiqueda head. Todo lo que este dentro de esta etiqueta lleva una sangria (o tab) para que quede claro al programador y su equipo, la organizacion general del codigo-->
+        <meta charset="UTF-8" />
+        <!-- Distribucion de caracteres aplicada. La UTF-8 permite la lectura de caraceres en idioma espanol: [ñ], [ü], vocales con acento como [ó]). 
+            Tambien existe UTF 16 y 32 pero no son muy utilizadas-->
+
+        <meta name="description" content="Un alumno del Instituto de Estudios Universitarios, contra todo pronostico, entiende de forma satisfactoria el lenguaje HTML" />
+        <!-- Descripcion de la pagina que aparecera en el buscador al momento de mostrar la pagina debajo de su nombre. Si se omite esta instruccion, en la descripcion se mostrara 
+            un extracto del primer parrafo de texto.-->
+
+        <meta name="robots" content="index, follow">
+        <!-- Permitir o no permitir el rastreo por los bots de busqueda de la pagina que se esta creando -->
+
+        <title>MBC | Alumno aprende HTML</title>  
+        <!-- Titulo de la pagina a visualizarse en la pestana del navegador -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Tamano de la pantalla. content="width=device-width indica que el tamano se ajuste al tamano del dispositivo que abra la pagina (telefono inteligente, tablet, computadora). 
+        initial-scale=1.0 indica que se procurara que el programa tenga escala de 1 (que el contenido de texto de la pagina no se muestre ni muy grande [escala 2, 3...] 
+        ni muy chico (0.5, 0.4...) -->
+
+        <link rel="stylesheet" href="style.css">
+        <!-- Permite colocar una hoja de estilos incorporada. Esto permite modificar la forma de visualizar el mismo contenido (agregar colores, tipo de letra, etc) -->
+        <link rel="shortcut icon" href="Boy.ico">
+
+    </head>
+    <!-- Se cierra la etiqueta head -->
+
+    <body>
+    <!-- Existen etiquetas de contenido y contenedoras. Contenedoras llevan mas etiquetas adentro. De contenido llevan texto, imagenes, documentos, etc. -->
+    <!-- Hay una etiqueta para cada parte del texto -->
+        <header>
+            <!-- Etiqueta para delimitar el header (porcion superior con logo, titulo y barra de navegación) de la pagina web -->
+            <h1 class="titulo-header">MBC News | Global</h1>
+            <!-- Establezco el titulo de la pagina -->
+            <nav>
+            <!-- Establezco la barra de navegación y le coloco los items correspondientes -->
+                <ul class="main-nav">
+                <!-- Para ello, uso una lista desordenada -->
+                    <li class="main-nav__item"><a href="#">Home</a></li>
+                    <!-- Declaro los distintos elementos de la lista y les asigno nombre. Pongo # porque en este momento no colocaré los hiperenlaces correspondientes a cada página -->
+                    <li class="main-nav__item"><a href="#">Noticias</a></li>
+                    <!-- A su vez, declaro las clases a las que pertenece cada elemento para modificarlo con CSS -->
+                    <li class="main-nav__item"><a href="#">Deportes</a></li>
+                    <li class="main-nav__item"><a href="#">Economía</a></li>
+                    <li class="main-nav__item"><a href="#">Ciencia</a></li>
+                    <li class="main-nav__item"><a href="#">Salud</a></li>
+                    <li class="main-nav__item"><a href="#">Cultura</a></li>
+                    <li class="main-nav__item"><a href="#">Tecnología</a></li>
+                    <li class="main-nav__item"><a href="#">Video</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Cierro las distintas etiquetas abiertas anteriormente -->
+        <main>
+        <!-- Main va abajo y afuera del header. Lleva todo el contenido principal -->
+
+            <article class="article_1">
+                <!-- Establezco la etiqueta Artículo para colocar el contenido de la pagina-->
+                <h1 id="titulo"> Bajo Reserva Exprés: Alumno de la IEU ahí la lleva para aprender HTML</h1>
+                <!-- Las etiquetas h1-h6 permiten colocar titulos en orden jerarquico. Con h1 establezco el titulo general del articulo-->
+                <h2 id="subtitulo">Segun testigos, el estudiante guanajuatense se pasó toda la tarde viendo cursos y leyendo los apuntes digitales para rifarse escribiendo este artículo</h2>
+                <!-- Con h2 establezco el subtitulo -->
+                <figure>
+                <!-- Establezco la etiqueta Figure para contener una etiqueta image con un caption debajo con elementos de buena práctica en lugar de usar div -->
+                    <img src="./html.jpg" alt="Codigo de HTML">
+                    <figcaption>Imagen obtenida de <a href="https://www.pexels.com/es-es/">Pexels</a></figcaption>
+                </figure>
+                <p>Guanajuato, Guanajuato, México, 02 de noviembre de 2020</p>
+                <!-- Utilizo párrafos (p) para escribir el texto del articulo -->
+                <p>El estudiante guanajuatense Diego Lerma, con el apoyo del Dr. Alfonso Medel Rojas y los apuntes digitales, 
+                    después de toda la semana de práctica y lectura de principios básicos de HTML, escribió su primer artículo para navegador web para la clase de Programación Web del 
+                    Instituto de Estudios Universitarios de Puebla.</p>
+                <em>El artículo presentado por el estudiante capitalino todavía no está disponible en los medios oficiales de difusión de noticias especializadas, 
+                    como El Universal o El Excelsior.</em>
+                <p>Actualmente, el artículo ya fue presentado a sus profesores para su revisión y que estos otorguen el veredicto final sobre la calidad 
+                    y correcciones en el primer código realizado.</p>
+                <p>El alumno se muestra deseoso de aprender más acerca de HTML, CSS3 y JS dentro de poco, para posteriormente incursionar en el ámbito de React Native o Electron</p>
+            </article>
+            <!-- Cierro la etiqueta article -->
+            <h1 class="enlaces-externos">Quizás también te interese</h1>
+            <!-- Abro un h1 ya fuera del artículo para establecer otra sección relevante dentro del cuerpo de la página -->
+
+            <h2 class="enlaces-externos__h2"><a href="https://www.bbc.com/mundo/noticias-54719567">
+                "El cerebro es la estructura más compleja y enigmática en el universo. Contiene más neuronas que las estrellas existentes en la galaxia"</a>
+                <img src="./brain.jpg" alt="Cerebro"></h2>
+                <!-- En esta sección tengo duda sobre si debería usar una etiqueta h2, p o div para contener los distintos hiperenlace, 
+                    pero para mí son una especie de subtitulo bajo el h1, por lo que usé un h2
+                    Inserto una imagen para atraer más información sobre el hipervínculo del artículo relacionado -->
+            <h2 class="enlaces-externos__h2"><a href="#">"Así es el nuevo diseño de la plataforma del Instituto de Estudios Universitarios"</a>
+                <br><img src="./rino.png" alt="Rino, Mascota de la IEU"></h2>
+                <!-- Establezco un segundo h2 para colocar otra notiica -->
+        </main>
+        <!-- Cierro el Main del cuerpo de la pagina -->
+        <footer>
+        <!-- Abro un footer para establecer información acerca de la página web al pie de esta -->
+            <ul class="footer">
+                <!-- Establezco los elementos del footer del mismo modo que en el header, con una lista desordenada adaptada con CSS -->
+                <li class="footer__item"><a href="#">Terminos de Uso</a></li>
+                <li class="footer__item"><a href="#">Sobre Mexican Broadcasting Corporation</a></li>
+                <br>
+                <li class="footer__item"><a href="#">Contacta a MBC</a></li>
+                <li class="footer__item"><a href="#">Cookies</a></li>
+            </ul>
+            <p>2020 MBC. La MBC no se hace responsable del contenido de sitios externos.</p>
+            <!-- Establezco informacion al final con un p -->
+        </footer>
+        <!-- Cierro el footer -->
+
+        <!-- Durante este artículo evité usar la etiqueta <div></div> durante el artículo, elemento de mala practica de utilizar 
+            si existe una etiqueta diferente que podria utilizarse en su lugar -->
+    </body>
+</html>
+<!-- Cierro el cuerpo y el documento -->
